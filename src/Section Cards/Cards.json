@@ -1,0 +1,30 @@
+[
+    {
+        "title": "EARNINGS (MONTHLY)",
+        "money": "$40,000",
+        "icons": "BsCalendarFill",
+        "color": "#4e73df",
+        "progress": 0
+    },
+    {
+        "title": "EARNINGS (ANNUAL)",
+        "money": "$215,000",
+        "icons": "FaDollarSign",
+        "color": "#1cc88a",
+        "progress": 0
+    },
+    {
+        "title": "TASKS",
+        "money": "50%",
+        "icons": "FaClipboardList",
+        "color": "#36b9cc",
+        "progress": 50
+    },
+    {
+        "title": "PENDING REQUESTS",
+        "money": "18",
+        "icons": "FaComments",
+        "color": "#f6c23e",
+        "progress": 0
+    }
+]

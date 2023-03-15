@@ -1,38 +1,187 @@
-.App {
-  text-align: center;
+body {
+    background: #eee;
+    font-family: 'Open Sans', sans-serif;
+    font-size: small;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ul {
+    list-style: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.color {
+    background-color: #4e73df;
+    height: 100vh;
+    width: 12%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/* .pageSplit {
+    display: flex;
+    width: 100%;
+} */
+
+.sidebarWidth {
+    width: 15%;
+    height: 255vh;
+    font-size: 0.7rem;
+    /* height: 100vh; */
 }
 
-.App-link {
-  color: #61dafb;
+.active {
+    width: 8%;
+    font-size: small;
+    height: 255vh;
+    /* height: 100vh; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.mainPageWidth {
+    width: 100%;
+    height: 100vh;
 }
+
+.pointer:hover {
+    cursor: pointer;
+}
+
+.customHover:hover {
+    cursor: pointer;
+    background-color: lightgray;
+    border-radius: 5%;
+}
+
+.disableHover:hover {
+    background-color: #4e73df !important;
+}
+
+.chartGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.profileIcon {
+    width: 10%;
+    /* font-weight: 400; */
+    /* font-size: small; */
+}
+
+.profileIcon {
+    width: 3%;
+}
+
+.mobileNavbar {
+    display: flex;
+
+}
+
+.rotate-15 {
+    transform: rotate(15deg);
+}
+
+.rotate-n-15 {
+    transform: rotate(-15deg);
+}
+
+.progress-sm {
+    height: 0.5rem;
+}
+
+.error {
+    color: #5a5c69;
+    font-size: 7rem;
+    position: relative;
+    /* line-height: 1; */
+    width: 12.5rem;
+}
+
+.btn-facebook {
+    background: #3b5998;
+    color: #eee;
+}
+
+.form-control-user {
+    border-radius: 10rem;
+}
+
+.bg-login-image {
+    background: url(https://source.unsplash.com/K4mSJ7kc0As/600x800);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-register-image {
+    background: url(https://source.unsplash.com/Mv9hjnEUHR4/600x800);
+    background-position: center;
+    background-size: cover;
+}
+
+.bg-password-image {
+    background: url(https://source.unsplash.com/oWTW-jNGl9I/600x800);
+    background-position: center;
+    background-size: cover;
+}
+
+@media screen and (max-width:500px) {
+    .cardDesign-small-screen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .cardGap {
+        margin-bottom: 5%;
+    }
+
+    .dashboardTitle {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .gap {
+        display: flex;
+        justify-content: end;
+        margin-top: 5%;
+    }
+
+    .sidebarWidth {
+        height: 432vh;
+    }
+
+    .active {
+        height: 433vh;
+    }
+}
+
+@media screen and (max-width:800px) and (min-width:501px) {
+    .cardDesign-small-screen {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+
+    .cardGap {
+        margin-bottom: 5%;
+    }
+
+    .sidebarWidth {
+        height: 300vh;
+    }
+
+    .active {
+        height: 310vh;
+    }
+}
+
+/* @media screen and (min-width:1024px) {
+    .sidebarWidth {
+        height: 110vh;
+    }
+
+    .active {
+        height: 110vh;
+    }
+} */
+
+/* body {
+    background-color: #fbfbfb;
+} */

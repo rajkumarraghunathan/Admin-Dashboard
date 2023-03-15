@@ -1,25 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import Sidebar from './Sidebar/Sidebar';
+import MainPage from './Main Page/MainPage';
+import { Routes, Route } from "react-router-dom";
+import Login from './Login';
+import Register from './Register';
+import Forget from './Forget';
+
+
+
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <Routes>
+            <Route path='*' element={<div className='d-flex'>
+                <Sidebar />
+                <MainPage />
+            </div>} />
+
+            <Route path='/Login' element={<Login />} />
+            <Route path='/Register' element={<Register />} />
+            <Route path='/Forget_password' element={<Forget />} />
+
+        </Routes>
+    )
 }
 
 export default App;
